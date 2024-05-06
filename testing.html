@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      
+    }
+    #nav{
+      display: flex;
+      width: 100%;
+      background-color: cornflowerblue;
+      justify-content: space-between;
+    }
+    #nav1{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+      
+    }
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    #img{
+      display: flex;
+      justify-content: space-between;
+    }
+    #home{
+      display: grid;
+      grid-template-columns:23% 23% 23% 23% ;
+      grid-template-rows: 47% 47%;
+      row-gap: 5.5%;
+      column-gap:2% ;
+      padding-top: 30px;
+    }
+    #image1{
+      grid-column: 1/3;
+      grid-row: 1/3;
+    
+     
+    
+    }
+    #image2{
+      grid-column: 3;
+      grid-row: 1;
+     
+     
+    
+    }
+    #image3{
+      grid-column: 4;
+      grid-row: 1;
+     
+    
+    }
+    #image4{
+      grid-column: 3;
+      grid-row: 2;
+     
+    }
+    #image5{
+      grid-column: 4;
+      grid-row: 2;
+    }
+    #mens{
+      display: flex;
+      padding-top: 30px;
+      width: 100%;
+      justify-content: space-around;
+    }
+    #text1{
+      display: flex;
+      flex-direction: column;
+      margin-left: 59px;
+    }
+    #women{
+      display: flex;
+      padding-top: 30px;
+      width: 100%;
+      justify-content: space-around;
+    }
+    #text2{
+      display: flex;
+      flex-direction: column;
+      margin-left: 59px;
+    }
+    #kids{
+      display: flex;
+      padding-top: 30px;
+      width: 100%;
+      justify-content: space-around;
+    }
+    #text3{
+      display: flex;
+      flex-direction: column;
+      margin-left: 59px;
+    }
+    #ex1{
+      display: flex;
+      justify-content: space-between;
+    }
+    #matter{
+      display: grid;
+      width: 100%;
+      justify-content: space-between;
+      
+    }
+    #side{
+      display: grid;
+  grid-template-columns: 50% 50% ;
+  width: 100%;
+  padding: 10px;
+  row-gap: 10px;
+  column-gap: 10px;
+  
+      
+    }
+    .grid-item{
+      background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: auto;
+  height: auto;
+    }
+    #insta{
+      display: flex;
+      margin-left: 59px;
+    }
+    #in2,#in3{
+    margin-left: 30px;
+   }
+   #footer{
+        display: flex;
+        width:100%;
+        height:100%; 
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+      }
+      #dfooter{
+        display: flex;
+        width:100%;
+        height:100%; 
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+        background-color: black;
+        color: white;
+      }
+      #copyright{
+        background-color: black;
+        width: auto;
+
+      }
+     
+    #image1:hover{
+      opacity: 0.9;
+      transform: scale(0.8);
+      border-radius: 500px;
+
+    
+    }
+    #image2:hover{
+      opacity: 0.9;
+      transform: scale(0.8);
+      border-radius: 500px;
+
+    }
+    #image3:hover{
+      opacity: 0.9;
+      transform: scale(0.8);
+      border-radius: 500px;
+
+    }
+    #image4:hover{
+      opacity: 0.9;
+      transform: scale(0.8);
+      border-radius: 500px;
+
+    }
+    #image5:hover{
+      opacity: 0.9;
+      transform: scale(0.8);
+      border-radius: 100px;
+
+    }
+    #m1:hover,#m2:hover,#m3:hover{
+      transform: scale(0.8);
+    
+      
+
+    }
+    #w1:hover,#w2:hover,#w3:hover{
+      opacity: 0.9;
+
+    }
+    #h:hover,#men:hover,#wom:hover,#exp:hover,#kid:hover{
+    transform: scale(0.8);
+      font-family: bold;
+   }
+   #kid1:hover{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+   }
+   
+   
+  
+
+    @media screen and  (min-width:100px) and (max-width:900px){
+      #nav{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+      #nav1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      #nav1 a{
+        border: 1px solid black;
+        width: 100%;
+        text-align: center;
+      }
+      #img{
+       justify-content: center;
+      }
+      #home{
+        display: flex;
+        flex-wrap: nowrap;
+         width: 100%;
+         flex-direction: column;
+    
+      }
+      #mens{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+      #m1,#m2,#m3{
+        margin-top: 30px;
+       
+      }
+      #women{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+      #w1,#w2,#w3{
+        margin-top: 30px;
+        
+      }
+      #kids{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+      #k1,#k2,#k3{
+        margin-top: 30px;
+       
+      }
+      #prev,#next{
+        display: none;
+      }
+      #explore{
+        display: flex;
+        width: 100%;
+        align-content: center;
+      }
+      #ex1{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        width: 100%;
+      }
+    
+      #insta{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      #side{
+        width: 100%;
+      }
+      #matter{
+        width: 100%;
+        text-align: center;
+         
+      }
+      #footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+      #footer1{
+        text-align: center;
+      }
+    
+      #dfooter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+      #c{
+      text-align: center;
+      }
+      #line{
+      padding-left: 250px;
+      }
+      #side{
+        position: relative;
+        bottom: 200px;
+      }
+      #insta{
+        align-items: center;
+      }
+      #explore{
+  
+      }
+     
+    
+  
+      
+     
+    }
+      
+    
+  </style>
+</head>
+<body>
+<div id="nav">
+    <div id="img"><img src="./white-logo.png"></div>
+    <div id="nav1">
+    <a href="#home" id="h">HOME</a>
+    <a href="#mens" id="men">MENS</a>
+    <a href="#women" id="wom">WOMENS</a>
+    <a href="#kids" id="kid">KIDS</a>
+    <a href="#" id="pag">PAGES</a>
+    <a href="#">FEATURES</a>
+    <a href="#explore" id="exp">EXPLORE</a>
+  </div>
+</div>
+<div id="home"  class="container-fluid">
+  <div id="image1" class="position-relative">
+     <img  width="100%" src="./left-banner-image.jpg">
+        <div class="position-absolute start-50 top-50 translate-middle text-white"><b>We are Hexashop</b><br>
+         Awesome clean and create html5 template<br>
+        <button class="btn btn-outline-dark text-white">Purchase!</button></p>
+        </div>
+</div>
+  <div id="image2" class="position-relative">
+    <img width="100%"  src="./baner-right-image-01.jpg">
+     <div  class="position-absolute start-50 top-50 translate-middle text-white">
+        <b>Women</b><br>
+         Best clothes for women</p>
+        </div>
+  </div> 
+  <div id="image3" class="position-relative">
+    <img width="100%"  src="./baner-right-image-02.jpg">
+       <div class="position-absolute start-50 top-50 translate-middle text-white">
+        <p><b>Men</b><br>
+          Best clothes for women
+        </p>
+      </div>
+  </div>
+    <div id="image4" class="position-relative">
+      <img width="100%"  src="./baner-right-image-03.jpg">
+      <div class="position-absolute start-50 top-50 translate-middle text-white" >
+        <b>Kids</b><br>
+        Best clothes for kids</p>
+    </div>
+    </div>
+  <div id="image5" class="position-relative"><img  width="100%" src="./baner-right-image-04.jpg">
+      <div class="position-absolute start-50 top-50 translate-middle text-white" >
+        <b>Accesories</b><br>
+      Best Accesories for trends</p>
+      </div>
+</div>
+</div>
+ <div id="text1"><p><h1>Men's Latest</h1>
+  details to details is what makes hexashop different from the others</p></div>
+  <div id="mens" style="padding: 10px 10px;">
+    <div id="prev" style="padding-top: 150px;"><button style="border: 1px solid black;"><img src="./prev.png"></button></div>
+    <div id="m1" class="pl-5"><img src="./men-01.jpg" width="100%">
+    <p><b>classic spring</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+      $120.00 </p>
+    </div>
+    <div id="m2" class="pl-5"><img src="./men-02.jpg" width="100%">
+      <p><b>Air Force 1X</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+        $120.00 </p></div>
+    <div id="m3" class="pl-5"><img src="./men-03.jpg" width="100%">
+      <p><b>Love Nanna's</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+        $120.00 </p></div>
+    <div id="next" style="padding-top: 150px;"><button style="border: 1px solid black;"><img src="./next.png"></button></div>
+  </div>
+  <div style="border-bottom: 3px dotted gray;"></div>
+<div id="text2"><p><h1>Women's Latest</h1>
+     details to details is what makes hexashop different from the others</p></div>
+   <div id="women" style="padding: 10px 10px;">
+
+  <div id="prev" style="padding-top: 150px;"><button style="border: 1px solid black;"><img src="./prev.png"></button></div>
+  <div id="w1"><img src="./women-01.jpg" width="100%">
+    <p><b>New green jacket</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+      $120.00 </p>
+  </div>
+  <div id="w2"><img src="./women-02.jpg" width="100%">
+    <p><b>Classic dress</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+      $120.00 </p>
+  </div>
+  <div id="w3"><img src="./women-03.jpg" width="100%">
+    <p><b>Spring collection</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+      $120.00 </p></div>
+  <div id="next" style="padding-top: 150px;"><button style="border: 1px solid black;"><img src="./next.png"></button></div>
+</div>
+<div style="border-bottom: 3px dotted gray;"></div>
+<div id="text3"><p><h1>kid's Latest</h1>
+  details to details is what makes hexashop different from the others</p></div>
+<div id="kids" style="padding: 10px 10px;">
+  <div id="prev" style="padding-top: 150px;"><button style="border: 1px solid black;"><img src="./prev.png"></button></div>
+  <div id="k1"><img  id= "kid1" src="./kid-01.jpg" width="100%">
+    <p><b>School collection</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+      $120.00 </p></div>
+  <div id="k2"><img  id= "kid1" src="./kid-02.jpg" width="100%">
+    <p><b>Summer cap</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+      $120.00 </p></div>
+  <div id="k3"><img id= "kid1" src="./kid-03.jpg" width="100%">
+    <p><b>Classic kid</b> <span class="float-end"><img width="15px" src="./star mark.png"><img  width="15px" src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"><img width="15px"  src="./star mark.png"></span><br>
+      $120.00 </p></div>
+  <div id="next" style="padding-top: 150px;"><button style="border: 1px solid black;"><img src="./next.png"></button></div>
+</div>
+<div style="border-bottom: 3px dotted gray;"></div>  
+<div id="explore" style="margin-left: 59px; margin-top: 30px;"></div><h3 id="c" class="container-fluid">Explore our products</h3></div>
+<div id="ex1">
+  <div id="matter" class="container-fluid">
+    <p style="font-family:sans-serif;font-weight: 500;">
+    You are allowed to use this Hexashop HTML CSS Template.
+    You can feel free to modify or edit this layout.
+    You can convert this template as any kind of ecommerce css theme you wish<br>
+    <b>&#x275D You are not allowed to redistribute this html template on any other website</b><br><br>
+    There are 5 pages included in this Hexashop Template and we 
+    are providing it to you for absolutely free of charge at our
+    templateMo website.There are web development costs for us.<br><br>
+    If this template is beneficial for your website or business
+      please kindly support us a little via paypal.Please also tell 
+      your friends about our great website.ThankYou.</p>
+      <button style="width: 150px; height: 60px; margin-bottom: 300px;">Discover more</button>
+  </div>
+  <div id="side">
+    <div class="grid-item" style="background-color: whitesmoke; align-items: center; width: 100%;height: 100%;"><h4  >Leather Bags</h4><br>
+      <h6 style="margin-bottom: 60px; margin-top: 0px;">latest collection</h6>
+    </div>
+    <div class="grid-item"><img width="100%"  height="100%" src="./explore-image-01.jpg"></div>
+    <div class="grid-item"><img  width="100%"  height="100%" src="./explore-image-02.jpg"></div>
+    <div class="grid-item" style="background-color: whitesmoke; align-items: center;"><h5  style="padding-top: 30px;">Different types</h5><br>
+      <h6>over 304 products</h6>
+    </div>
+  </div>
+</div>  
+<div style="border-bottom: 3px dotted gray;"></div>   
+<div id="social"><h2  id="c" style="margin-left: 59px;margin-top: 30px;">Social media</h2>
+<p style="margin-left: 59px;">details to details is what makes hexashop different from the others</p>
+<div id="insta" style="padding: 10px 10px;">
+<div><img src="./instagram-01.jpg"></div>
+<div><img src="./instagram-02.jpg"></div>
+<div><img src="./instagram-03.jpg"></div>
+<div><img src="./instagram-04.jpg"></div>
+<div><img src="./instagram-05.jpg"></div>
+<div><img src="./instagram-06.jpg"></div>
+</div>
+</div> 
+<div style="border-bottom: 3px dotted gray; margin-top: 100px;"></div>
+<div id="footer" style="margin-top: 80px;">
+  <div id="footer1" style=" margin-top: 5px;margin-top: 30px;"><h2>By Subscribing Our Newsletter You</h2> 
+      <h2>Can Get 30% off </h2>
+       <p>details to details is what makes hexashop different from the others themes</p>
+        <form>
+        <input type="text" placeholder="Your name">
+        <input type="text" placeholder="Your name">
+        <img src="./share.png"width=30px>
+        </form>
+    </div>
+    <div id="footer2">
+      <b>Storage loaction</b>
+        <p>Sunny Isles Beach,<br> FL 33160, United States</p>
+        <b>Phone:</b>
+        <p>010-020-0340</p>
+        <b>Office Location:</b>
+        <p>North Miami Beach</p>
+        
+      </div>
+      <div id="footer3">
+        <b>Work Hours:</b>
+          <p>07:30 AM - 9:30</p>
+          <b>Email:</b>
+        <p>info@company.com</p>
+        <b>Social media:</b>
+          <p>Facebook, Instagram,<br>
+             Behance, Linkedin</p>
+        
+          
+        </div>
+   
+</div>
+<div id="dfooter">
+  <div id="dfooter1">
+    <p id="c" style="margin-top: 80px;"> <img src="./white-logo.png">
+            <p id="c">16501 Collins Ave, Sunny Isles Beach,<br> FL 33160, United States
+              hexashop</p>
+            <p id="c">hexashop@company.com</p>
+            <p id="c">010-020-0340</p>
+      </p>
+  </div>
+    <div id="dfooter2">
+      <p id="c"></p><b>SHOPPING & CATEGORIES</b>
+        <P id="c">Mens shopping</P>
+        <p id="c">Womens shoping</p>
+        <p id="c">Kids shoppin</p>
+    </p>
+    </div>
+      <div id="dfooter3">
+       <p id="c"> <b>Usefull links</b>
+          <p>Homepage</p>
+          <p>About us</p>
+          <p>Page</p>
+          <p>Contact us</p>
+        </p>
+      </div>
+      <div id="dfooter4">
+       <p id="c"> <b>Help and Information</b>
+          <p id="c">Help</p>
+          <p id="c">FaQs</p>
+          <p id="c">shipping</p>
+          <p id="c">Tracking Id</p>
+        </p>
+      </div>
+  </div>
+  <div style="background-color: black;">
+    <div id="line" style="border-bottom: 3px solid gray; margin-left: 80px;margin-right:150px;"></div>
+  <div class="container text-center text-white" id="copyright">
+    <p style="margin-top: 30px;">Copyright c 2022 HexaShop Co.Ltd. All Rights Reserved.</p>
+    <p>Design:TemplateMO</p>
+    <p><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-brands fa-behance"></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</div>                                                                                
+<link src="./bootstrap-5.3.3-dist/js/bootstrap.js">
+</body>
+</html>
